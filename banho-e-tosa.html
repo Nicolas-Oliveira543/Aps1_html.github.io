@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="Index.html">Home</a>
+
+    <h1><b>Agendamento para banho e tosa</b></h1>
+
+    <h2><b>Faça o seu agendamento com pelo menos 48 horas de antecedência</b></h2>
+
+    <form action="Obrigado.html" method="get">
+        <fieldset>
+            <legend>Informações do dono</legend>
+            <p>
+        <div>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" placeholder="Digite o nome completo do dono do animal" size="50">
+        </div>
+        </p>
+        <p>
+        <div>
+            <label for="endereço">Endereço: </label>
+            <input type="text" name="endereço" id="endereço" placeholder="Digite o endereço" size="50">
+        </div>
+        </p>
+        <p>
+        <div>
+            <label for="CEP">CEP: </label>
+            <input type="number" name="CEP" id="CEP" placeholder="XXXXX-XXX" size="50">
+        </div>
+        </p>
+        <p>
+        <div>
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email" placeholder="Digite o endereço de email" size="50">
+        </div>
+        </p>
+        <p>
+        <div>
+            <label for="telefone">Tel/Cel: </label>
+            <input type="number" name="telefone" id="telefone" placeholder="99 99999-9999" size="50">
+        </div>
+        </p>
+        </fieldset>
+        <fieldset>
+            <legend>Animal</legend>
+            <p>
+        <div>
+            <label for="nomeA">Nome: </label>
+            <input type="text" name="nomeA" id="nomeA" placeholder="Digite o nome do animal" size="50">
+        </div>
+        </p>
+
+        <p>
+        <div>
+            <label for="porte">Porte do cão: </label>
+
+            <input type="radio" name="porte" id="pq" checked>
+            <label for="pq">Pequeno</label>
+
+            <input type="radio" name="porte" id="md">
+            <label for="md">Médio</label>
+
+            <input type="radio" name="porte" id="gd">
+            <label for="gd">Grande</label>
+        </div>
+        </p>
+        
+        <p>
+            <div>
+            <label for="tosa">Tipo de tosa</label>
+            <select name="opcao" id="opcao">
+                <option value="1">Nenhuma</option>
+                <option value="2">Tosa padrão</option>
+                <option value="3">Tosa higienica</option>
+                <option value="4">Tosa na tesoura</option>
+                <option value="5">Tosa da raça</option>
+                <option value="6">Tosa bebê</option>
+            </select>
+            </div>
+        </p>
+
+        <label for="obs">Observações: </label>
+        <textarea name="obs" id="obs" cols="50" rows="2" placeholder="Digite alguma informação do animal se necessário">
+        </textarea>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Horarios - Obs: Não atendemos aos domingos e às segundas-feiras</legend>
+        <div>
+            <p>
+        <label for="dia">Indique os dias da semana de sua preferencia:</label>
+        </p>
+
+        <p>
+        <input type="checkbox" name="dia" id="dia1"><label for="dia1">Terça-feira</label>
+        <input type="checkbox" name="dia" id="dia2"><label for="dia2">Quarta-feira</label>
+        <input type="checkbox" name="dia" id="dia3"><label for="dia3">Quinta-feira</label>
+        <input type="checkbox" name="dia" id="dia4"><label for="dia4">Sexta-feira</label>
+        <input type="checkbox" name="dia" id="dia5"><label for="dia5">Sábado</label>
+        </p>
+        </div>
+
+        <p>
+        <div>
+        <label for="data1">Primeira opção de horario</label>
+        <input type="date" name="data1" id="data1">
+        </div>
+        </p>
+
+        <p>
+        <div>
+        <label for="data2">segunda opção de horario</label>
+        <input type="date" name="data2" id="data2">
+        </div>
+        </p>
+        </fieldset>
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
